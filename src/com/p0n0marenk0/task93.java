@@ -19,10 +19,11 @@ public class task93 {
     //    array = arrayOfRandomNumbers(length);
         //System.out.println(Arrays.binarySearch(array, valueForFind));
     //}
-        if (binarySearch(arrayOfRandomNumbers((length)), valueForFind, 0, length - 1) == -1) {
+        int index = binarySearch(arrayOfRandomNumbers((length)), valueForFind, 0, length - 1);
+        if (index == -1) {
             System.out.println("Нихуя похожего нету в этом ебанном массиве");
         } else {
-            System.out.println("Индекс искомого элемента: " + binarySearch(arrayOfRandomNumbers((length)), valueForFind, 0, length - 1));
+            System.out.println("Индекс искомого элемента: " + index);
         }
     }
 
