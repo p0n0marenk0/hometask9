@@ -15,17 +15,13 @@ public class task93 {
         int length = scanner.nextInt();
         System.out.println("Введите искомое значение: ");
         int valueForFind = scanner.nextInt();
-     //    int[] array;
-    //    array = arrayOfRandomNumbers(length);
-        //System.out.println(Arrays.binarySearch(array, valueForFind));
-    //}
         int index = binarySearch(arrayOfRandomNumbers((length)), valueForFind, 0, length - 1);
-        if (index == -1) {
-            System.out.println("Нихуя похожего нету в этом ебанном массиве");
-        } else {
-            System.out.println("Индекс искомого элемента: " + index);
-        }
+    if (index == -1) {
+        System.out.println("Этого числа в массиве нет ");
+    } else {
+        System.out.println("Число в массиве есть, его индекс: " + index);
     }
+}
 
     private static int[] arrayOfRandomNumbers(int arrayLength) {
         Random random = new Random();
